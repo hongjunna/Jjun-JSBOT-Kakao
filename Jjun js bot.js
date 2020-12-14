@@ -4,6 +4,8 @@ const scriptName="Jjun bot.js";
 //기본 작동 스크립트
 function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
     //주식분야봇
+
+    //종목조회
     if(msg.split(" ")[0] == "/종목"){
         var stockcode = msg.split(" ")[1];
         var stockdata = Utils.getWebText("https://finance.naver.com/item/main.nhn?code="+stockcode);
